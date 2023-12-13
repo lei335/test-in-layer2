@@ -1,9 +1,9 @@
 const hre = require('hardhat');
 
 async function main() {
-  const vendingMachine = await hre.ethers.deployContract('VendingMachine');
-  await vendingMachine.waitForDeployment();
-  console.log(`Cupcake vending machine deployed to ${vendingMachine.target}`);
+  const store = await hre.ethers.deployContract('Store');
+  await store.waitForDeployment();
+  console.log(`Store deployed to ${store.target}`);
 }
 
 main().catch((error) => {

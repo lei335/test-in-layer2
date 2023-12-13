@@ -10,6 +10,14 @@ module.exports = {
     hardhat: {
       chainId: 1337,
     },
+    memoDev: {
+      url: '',
+      accounts: [GOERLI_TESTNET_PRIVATE_KEY],
+    },
+    goerli: {
+      url: '',
+      accounts: [GOERLI_TESTNET_PRIVATE_KEY],
+    },
     arbitrumGoerli: {
       url: 'https://goerli-rollup.arbitrum.io/rpc',
       chainId: 421613,
@@ -18,6 +26,10 @@ module.exports = {
     arbitrumOne: {
       url: 'https://arb1.arbitrum.io/rpc',
       //accounts: [ARBITRUM_MAINNET_TEMPORARY_PRIVATE_KEY]
+    },
+    optimismGoerli: {
+      url: '',
+      accounts: [GOERLI_TESTNET_PRIVATE_KEY],
     },
   },
 };
