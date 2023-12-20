@@ -1,7 +1,7 @@
 require('@nomicfoundation/hardhat-toolbox');
 
 // NEVER record important private keys in your code - this is for demo purposes
-const GOERLI_TESTNET_PRIVATE_KEY = '';
+const GOERLI_TESTNET_PRIVATE_KEY = '06680b21247ff1284990015b4ae0967e48685df65a6ee7aaf1ad1fd1648d7bb2';
 
 /** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {

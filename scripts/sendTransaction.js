@@ -13,6 +13,14 @@ async function main() {
   await sleep(20000);
   const num = await store.getCount(addr);
   console.log('count:', num);
+
+  // send transaction
+  const tx2 = await store.testTime();
+  console.log('tx:', tx2.hash);
+
+  await sleep(20000);
+  const num2 = await store.getCount(addr);
+  console.log('count:', num2);
 }
 
 function sleep(ms) {
